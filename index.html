@@ -95,36 +95,55 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="card1-title">ما هو السكري؟</h3>
+                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="nav-what-is">ما هو السكري؟</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card1-desc">تعريف بسيط للسكري وكيف يتحول الطعام إلى طاقة.</p>
                         </div>
                         <button onclick="showSection('what-is')" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
                     </div>
-                    <!-- بقية البطاقات... -->
+                    
                     <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="card4-title">الأعراض</h3>
+                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="nav-types">الأنواع</h3>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="card2-desc">تعرف على الفرق بين النوع الأول، الثاني، وسكري الحمل.</p>
+                        </div>
+                        <button onclick="showSection('types')" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
+                    </div>
+
+                    <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="nav-causes">الأسباب</h3>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="card3-desc">العوامل الوراثية ونمط الحياة التي تزيد من الخطر.</p>
+                        </div>
+                        <button onclick="showSection('causes')" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
+                    </div>
+
+                    <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="nav-symptoms">الأعراض</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card4-desc">علامات الإنذار المبكرة التي تستحق الانتباه.</p>
                         </div>
                         <button onclick="showSection('symptoms')" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
                     </div>
+                    
                     <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="card5-title">العلاج</h3>
+                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="nav-treatment">العلاج</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card5-desc">الأدوية والمتابعة والتغذية والإدارة اليومية.</p>
                         </div>
                         <button onclick="showSection('treatment')" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
                     </div>
+                    
                     <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between border-red-200">
                         <div>
-                            <h3 class="text-xl font-bold text-red-700 mb-2" data-i18n="card7-title">المضاعفات</h3>
+                            <h3 class="text-xl font-bold text-red-700 mb-2" data-i18n="nav-complications">المضاعفات</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card7-desc">المخاطر طويلة المدى مثل اعتلال الأعصاب والشبكية والقدم السكري.</p>
                         </div>
                         <button onclick="showSection('complications')" class="text-red-600 font-bold flex items-center gap-1 hover:text-red-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
                     </div>
+                    
                     <div class="start-card bg-white rounded-xl p-6 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="card6-title">الوقاية</h3>
+                            <h3 class="text-xl font-bold text-blue-800 mb-2" data-i18n="nav-prevention">الوقاية</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card6-desc">عادات عملية تقلل خطر إصابتك مدى الحياة.</p>
                         </div>
                         <button onclick="showSection('prevention')" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800" data-i18n="read-more">اقرأ المزيد &larr;</button>
@@ -148,7 +167,7 @@
             </div>
         </section>
 
-        <!-- النوافذ الأخرى (تم تضمين الأيقونات فيها) -->
+        <!-- 2. نافذة: ما هو السكري -->
         <section id="what-is" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-blue-900 mb-4" data-i18n="nav-what-is">ما هو السكري؟</h2>
@@ -157,6 +176,7 @@
             </div>
         </section>
 
+        <!-- 3. نافذة: الأنواع -->
         <section id="types" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-blue-900 mb-6" data-i18n="nav-types">أنواع مرض السكري</h2>
@@ -177,6 +197,7 @@
             </div>
         </section>
 
+        <!-- 4. نافذة: الأسباب -->
         <section id="causes" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-blue-900 mb-4" data-i18n="nav-causes">الأسباب وعوامل الخطر</h2>
@@ -190,6 +211,7 @@
             </div>
         </section>
 
+        <!-- 5. نافذة: الأعراض -->
         <section id="symptoms" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <div class="mb-6">
@@ -217,6 +239,7 @@
             </div>
         </section>
 
+        <!-- 6. نافذة: العلاج -->
         <section id="treatment" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-blue-900 mb-4" data-i18n="nav-treatment">طرق العلاج والإدارة</h2>
@@ -230,7 +253,7 @@
             </div>
         </section>
 
-        <!-- نافذة المضاعفات الجديدة -->
+        <!-- 7. نافذة: المضاعفات -->
         <section id="complications" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
@@ -263,6 +286,7 @@
             </div>
         </section>
 
+        <!-- 8. نافذة: الوقاية -->
         <section id="prevention" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-blue-900 mb-4" data-i18n="nav-prevention">الوقاية من السكري</h2>
@@ -288,7 +312,7 @@
             </div>
         </section>
 
-        <!-- نافذة التقييم -->
+        <!-- 9. نافذة: التقييم -->
         <section id="feedback" class="section-content fade-in">
             <div class="bg-white rounded-xl shadow-sm p-8 border border-gray-100 text-center">
                 <h2 class="text-2xl font-bold text-blue-900 mb-4" data-i18n="feedback-title">تقييم الموقع</h2>
@@ -348,15 +372,12 @@
                 "mission-text": "From the classroom to community service; this website was designed by 'Community Health Nursing' students as a graduation project embodying our awareness mission. Through it, we strive to provide the necessary knowledge to support prevention and early understanding of diabetes, because your awareness today is immunity for your health tomorrow.",
                 
                 "where-to-start": "Where would you like to start?",
-                "card1-title": "What is Diabetes?",
                 "card1-desc": "A simple definition of diabetes and how food turns into energy.",
-                "card4-title": "Symptoms",
+                "card2-desc": "Learn the difference between Type 1, Type 2, and Gestational diabetes.",
+                "card3-desc": "Genetic and lifestyle factors that increase the risk.",
                 "card4-desc": "Early warning signs that are worth paying attention to.",
-                "card5-title": "Treatment",
                 "card5-desc": "Medications, monitoring, nutrition, and daily management.",
-                "card7-title": "Complications",
                 "card7-desc": "Long-term risks like neuropathy, retinopathy, and diabetic foot.",
-                "card6-title": "Prevention",
                 "card6-desc": "Practical habits to reduce your risk for life.",
                 "read-more": "Read More &rarr;",
                 "video-title": "Ministry of Health Awareness Video",
@@ -433,15 +454,12 @@
                 "mission-text": "من مقاعد الدراسة إلى خدمة المجتمع؛ صُمم هذا الموقع بيد طلاب مادة 'تمريض صحة المجتمع' كتكليف تخرج يجسد رسالتنا التوعوية. نسعى من خلاله لتقديم المعرفة اللازمة لدعم الوقاية والفهم المبكر لمرض السكري، لأن وعيك اليوم هو حصانة لصحتك غداً.",
                 
                 "where-to-start": "من أين تحب أن تبدأ؟",
-                "card1-title": "ما هو السكري؟",
                 "card1-desc": "تعريف بسيط للسكري وكيف يتحول الطعام إلى طاقة.",
-                "card4-title": "الأعراض",
+                "card2-desc": "تعرف على الفرق بين النوع الأول، الثاني، وسكري الحمل.",
+                "card3-desc": "العوامل الوراثية ونمط الحياة التي تزيد من الخطر.",
                 "card4-desc": "علامات الإنذار المبكرة التي تستحق الانتباه.",
-                "card5-title": "العلاج",
                 "card5-desc": "الأدوية والمتابعة والتغذية والإدارة اليومية.",
-                "card7-title": "المضاعفات",
                 "card7-desc": "المخاطر طويلة المدى مثل اعتلال الأعصاب والشبكية والقدم السكري.",
-                "card6-title": "الوقاية",
                 "card6-desc": "عادات عملية تقلل خطر إصابتك مدى الحياة.",
                 "read-more": "اقرأ المزيد &larr;",
                 "video-title": "فيديو توعوي من وزارة الصحة",
